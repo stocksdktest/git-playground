@@ -18,6 +18,6 @@ steps:
     api_key:
       from_secret: release-token
     files:
-    - /tmp/ok
+    - master_new.txt
     title: 0.0.1
     note: 0.0.1
