@@ -14,3 +14,10 @@ steps:
   image: busybox:latest
   commands:
   - touch /tmp/ok
+- name: publish
+  image: plugins/github-release
+  settings:
+    api_key: f13b3ba9d940df71b2cc365dd0474dc2d3958417
+    files:
+    - /tmp/ok
+    title: 0.0.1
