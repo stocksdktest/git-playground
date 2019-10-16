@@ -4,10 +4,8 @@ type: docker
 name: default
 
 trigger:
-  branch:
-  - release
   event:
-  - push
+  - tag
 
 steps:
 - name: test
@@ -21,5 +19,3 @@ steps:
     files:
     - /tmp/ok
     title: 0.0.1
-  when:
-    event: tag
