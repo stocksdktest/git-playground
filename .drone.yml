@@ -15,7 +15,8 @@ steps:
 - name: publish
   image: plugins/github-release
   settings:
-    api_key: cf5eec5432180a531bcd4fda3100727d192caf34
+    api_key:
+      from_secret: release-token
     files:
     - /tmp/ok
     title: 0.0.1
