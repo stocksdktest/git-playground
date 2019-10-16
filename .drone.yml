@@ -21,3 +21,5 @@ steps:
     files:
     - /tmp/ok
     title: 0.0.1
+  when:
+    event: tag
