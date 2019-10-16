@@ -1,0 +1,16 @@
+---
+kind: pipeline
+type: docker
+name: default
+
+trigger:
+  branch:
+  - release
+  event:
+  - push
+
+steps:
+- name: test
+  image: busybox:latest
+  commands:
+  - touch /tmp/ok
